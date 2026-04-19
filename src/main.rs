@@ -1,3 +1,5 @@
+mod generics;
+
 trait Summary{
     fn summarise(&self)-> String;
 }
@@ -34,4 +36,7 @@ fn main(){
     let tweet1 = Tweet{username: String::from("souradip"),content: String::from("souradip")};
     notify(&article1);
     notify(&tweet1);
+
+    // --- Generics examples ---
+    generics::run_generics_examples();
 }
