@@ -1,5 +1,4 @@
 mod generics;
-
 trait Summary{
     fn summarise(&self)-> String;
 }
